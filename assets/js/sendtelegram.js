@@ -1,5 +1,5 @@
 var telegram_bot_id = "5029508020:AAEVAd3hZa5m5TEbTs1f7c2zddexiAvwWEo";
-var chat_id = 1073336360;
+var chat_id = 5011027587;
 var u_name, u_email, u_subject, u_message;
 var ready = function () {
     u_name = document.getElementById("name").value;
