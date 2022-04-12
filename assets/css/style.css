@@ -12,7 +12,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #585a61;
 }
-
+.blkv_theme{
+  --tblr-body-color: #f8fafc;
+  --tblr-body-color-rgb: 248, 250, 252;
+  --tblr-body-bg: #1b2434;
+  --tblr-body-bg-rgb: 26.5617978, 36.3011236, 52.2382022;
+  --tblr-card-bg: #1e293b;
+  --tblr-card-bg-rgb: 30, 41, 59;
+  --tblr-border-color: #2c3c56;
+  --tblr-border-color-light: #253249;
+  color: #f8fafc;
+  background-color: #1b2434;
+}
 a {
   color: #5777ba;
   text-decoration: none;
