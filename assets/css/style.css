@@ -8,11 +8,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   color: #585a61;
 }
-.blkv_theme{
+.blkv_theme {
   --tblr-body-color: #f8fafc;
   --tblr-body-color-rgb: 248, 250, 252;
   --tblr-body-bg: #1b2434;
@@ -34,12 +37,17 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
 .work_steps {
-margin-bottom: -60px !important;
+  margin-bottom: -60px !important;
 }
 
 /*--------------------------------------------------------------
@@ -60,7 +68,7 @@ margin-bottom: -60px !important;
 }
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #4E9F3D;
   line-height: 0;
 }
 .back-to-top:hover {
@@ -70,6 +78,9 @@ margin-bottom: -60px !important;
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+  background-color: #191A19;
+  border: 2px solid #4E9F3D;
+
 }
 
 /*--------------------------------------------------------------
@@ -104,7 +115,8 @@ margin-bottom: -60px !important;
   font-weight: 400;
   letter-spacing: 2px;
 }
-#header .logo h1 a, #header .logo h1 a:hover {
+#header .logo h1 a,
+#header .logo h1 a:hover {
   color: #5777ba;
   text-decoration: none;
 }
@@ -132,7 +144,8 @@ margin-bottom: -60px !important;
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,27 +155,36 @@ margin-bottom: -60px !important;
   color: #47536e;
   white-space: nowrap;
   transition: 0.3s;
+  
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #5777ba;
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #1E5128;
+ 
 }
-.navbar .getstarted, .navbar .getstarted:focus {
-  background: #5777ba;
-  color: #fff;
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #191A19;
+  color: #4E9F3D;
   padding: 12px 25px;
   margin-left: 30px;
-  color: #fff;
+
   line-height: 1;
   border-radius: 50px;
+  border: 2px solid #1E5128;
 }
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  background: #748ec6;
-  color: #fff;
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  background: transparent;
+
 }
 .navbar .dropdown ul {
   display: block;
@@ -191,7 +213,9 @@ margin-bottom: -60px !important;
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #5777ba;
 }
 .navbar .dropdown:hover > ul {
@@ -272,15 +296,19 @@ margin-bottom: -60px !important;
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #47536e;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #5777ba;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -303,7 +331,9 @@ margin-bottom: -60px !important;
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #5777ba;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -318,11 +348,12 @@ margin-bottom: -60px !important;
   position: relative;
   overflow: hidden;
   padding: 140px 0 100px 0;
+  background: azure;
 }
 #hero::before {
   content: "";
   position: absolute;
-  right: -100%;
+  right: -10%;
   top: 20%;
   width: 250%;
   height: 200%;
@@ -335,11 +366,17 @@ margin-bottom: -60px !important;
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
-  color: #5777ba;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #4E9F3D  ;
+  text-transform: uppercase;
+  /* font-family: "Source Sans Pro", sans-serif; */
+}
+
+#hero h1 span {
+  font-weight: 600;
+  color: #1E5128;
 }
 #hero h2 {
-  color: #515f7d;
+  color: #D8E9A8;
   margin-bottom: 50px;
   font-size: 20px;
 }
@@ -410,7 +447,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f5fa;
+  background: #f2faf3;
 }
 
 .section-title {
@@ -422,11 +459,14 @@ section {
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5777ba;
+  color: #4E9F3D;
   font-family: "Source Sans Pro", sans-serif;
+
+
 }
 .section-title p {
   margin-bottom: 0;
+  color: #191A19;
 }
 
 /*--------------------------------------------------------------
@@ -483,15 +523,16 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
+color: #4E9F3D;
 }
 .features .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5777ba;
+  color: #1E5128;
 }
 .features .content .icon-box p {
   font-size: 15px;
-  color: #979aa1;
+  color: #191A19;
   margin-left: 60px;
 }
 @media (max-width: 991px) {
@@ -513,23 +554,33 @@ section {
 --------------------------------------------------------------*/
 .details .content + .content {
   margin-top: 100px;
+  align-items: center;
 }
+
+.details .row {
+  flex-direction: row-reverse;
+}
+
 .details .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #47536e;
+  color: #1E5128;
+  border-left: 3px solid #1E5128;
+  padding-left: 20px;
 }
+
 .details .content ul {
   list-style: none;
   padding: 0;
 }
 .details .content ul li {
   padding-bottom: 10px;
+  color: #191A19;
 }
 .details .content ul i {
   font-size: 24px;
   padding-right: 2px;
-  color: #5777ba;
+  color: #1E5128;
   line-height: 0;
 }
 .details .content p:last-child {
@@ -544,6 +595,7 @@ section {
 }
 .gallery .swiper-slide {
   transition: 0.3s;
+
 }
 .gallery .swiper-pagination {
   margin-top: 20px;
@@ -554,43 +606,51 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5777ba;
+  transition: .5s;
+  border: 1px solid #1E5128;
 }
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5777ba;
+    background-color: #1E5128;
+    width: 25px;
+    border-radius: 10px;
 }
 .gallery .swiper-slide-active {
   text-align: center;
+  transition: .5s;
 }
 @media (min-width: 992px) {
   .gallery .swiper-wrapper {
     padding: 40px 0;
   }
   .gallery .swiper-slide-active {
-    border: 6px solid #5777ba;
+box-shadow: 0 30px 50px gray;
+    overflow: hidden;
     padding: 4px;
     background: #fff;
     z-index: 1;
     transform: scale(1.2);
     margin-top: 10px;
-    border-radius: 25px;
+border-radius: 10px;
   }
 }
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 30px 60px;
   margin: 30px 10px 30px 50px;
-  min-height: 200px;
+  min-height: 300px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
   position: relative;
   background: #fff;
+  border: 2px solid #1E5128;
+  border-radius: 10px;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
@@ -598,19 +658,21 @@ section {
   border: 6px solid #fff;
   position: absolute;
   left: -45px;
+  border: 2px solid #1E5128;  
 }
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #1E5128;
 }
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #4E9F3D;
   margin: 0;
 }
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #e8ecf5;
   font-size: 26px;
 }
@@ -636,12 +698,15 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background: transparent;
   opacity: 1;
-  border: 1px solid #5777ba;
+  border: 1px solid #1E5128;
+  transition: .5s;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5777ba;
+  background-color: #1E5128;
+  width: 25px;
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -656,6 +721,12 @@ section {
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: center;
+  border:  2px solid #191A19;
+  border-radius: 10px;
+  transition: .3s;
+}
+.pricing .box:hover{
+  box-shadow: 0px 35px 50px gray;
 }
 .pricing h3 {
   font-weight: 300;
@@ -664,7 +735,7 @@ section {
 }
 .pricing h4 {
   font-size: 46px;
-  color: #5777ba;
+  color: #1E5128;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
@@ -699,29 +770,30 @@ section {
   text-decoration: line-through;
 }
 .pricing .get-started-btn {
-  background: #47536e;
+  background: #191A19 ;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 20px;
-  color: #fff;
+  color: #4E9F3D;
   transition: none;
   font-size: 14px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   transition: 0.3s;
+  border: 2px solid #4E9F3D;
 }
 .pricing .get-started-btn:hover {
-  background: #5777ba;
+  background: transparent;
 }
 .pricing .featured {
   z-index: 10;
   margin: -30px -5px 0 -5px;
 }
 .pricing .featured .get-started-btn {
-  background: #5777ba;
+  background: #191A19;
 }
 .pricing .featured .get-started-btn:hover {
-  background: #748ec6;
+  background: transparent;
 }
 @media (max-width: 992px) {
   .pricing .box {
@@ -751,16 +823,19 @@ section {
   padding: unset !important;
 }
 
-
 .faq .accordion-list {
   padding: 0 100px;
 }
 .faq .accordion-list ul {
   padding: 0;
   list-style: none;
+  border: 1px solid #1E5128;
+  padding: 20px;
+  border-radius: 10px;
 }
 .faq .accordion-list li + li {
   margin-top: 15px;
+
 }
 .faq .accordion-list li {
   padding: 20px;
@@ -778,15 +853,17 @@ section {
   padding: 0 30px;
   outline: none;
   cursor: pointer;
+  color: #1E5128;
 }
 .faq .accordion-list .icon-help {
   font-size: 24px;
   position: absolute;
   right: 0;
   left: 20px;
-  color: #b1c0df;
+  color: #1E5128;
 }
-.faq .accordion-list .icon-show, .faq .accordion-list .icon-close {
+.faq .accordion-list .icon-show,
+.faq .accordion-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -801,10 +878,9 @@ section {
 }
 .faq .accordion-list a.collapsed {
   color: #343a40;
+
 }
-.faq .accordion-list a.collapsed:hover {
-  color: #5777ba;
-}
+
 .faq .accordion-list a.collapsed .icon-show {
   display: inline-block;
 }
@@ -821,36 +897,45 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .sent-mail {
-    border: 1px solid grey;
-    position: fixed;
-    background: white;
-    padding: 15px;
-    top: 100px;
-    z-index: 1000;
-    margin: 20px;
-    box-shadow: 10px 10px #6c757d;
+  border: 1px solid grey;
+  position: fixed;
+  background: white;
+  padding: 15px;
+  top: 100px;
+  z-index: 1000;
+  margin: 20px;
+  box-shadow: 10px 10px #6c757d;
 }
-.ok_button{
-    background: #fff;
-    border: 2px solid #5777ba;
-    padding: 10px 24px;
-    color: #5777ba;
-    transition: 0.4s;
-    border-radius: 50px;
-    margin-top: 5px;
-    text-align: center;
-    cursor: pointer;
+.ok_button {
+  background: #fff;
+  border: 2px solid #5777ba;
+  padding: 10px 24px;
+  color: #5777ba;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 .contact .info {
   padding: 20px 40px;
-  background: #f1f3f6;
+  background: #f2faf3;
   color: #47536e;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #1E5128 ;
+  border-radius: 10px;
+
+}
+.bord{
+  border: 1px solid #1E5128;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f2faf3;
+
 }
 .contact .info i {
   font-size: 48px;
-  color: #9fb2d8;
+  color: #1E5128;
   margin-bottom: 15px;
 }
 .contact .info h4 {
@@ -860,9 +945,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
+  color: #191A19;
 }
 .contact .info p {
   font-size: 15px;
+}
+.contact .info a{
+  color: #4E9F3D;
 }
 .contact .php-email-form {
   width: 100%;
@@ -909,32 +998,32 @@ section {
   margin-bottom: 5px;
   color: #8a8c95;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
+  border: 1px solid #1E5128;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #5777ba;
-}
+
 .contact .php-email-form input {
   padding: 10px 15px;
 }
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
-  background: #fff;
-  border: 2px solid #5777ba;
+.contact .php-email-form button[type="submit"] {
+  background: #191A19;
+  border: 2px solid #1E5128;
   padding: 10px 24px;
-  color: #5777ba;
+  color: #4E9F3D;
   transition: 0.4s;
   border-radius: 50px;
   margin-top: 5px;
 }
-.contact .php-email-form button[type=submit]:hover {
-  background: #5777ba;
-  color: #fff;
+.contact .php-email-form button[type="submit"]:hover {
+  background: transparent ;
+
 }
 @media (max-width: 1024px) {
   .contact .php-email-form {
@@ -967,11 +1056,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+
   padding: 0 0 30px 0;
   color: #47536e;
   font-size: 14px;
-  background: #eff2f8;
+  background: #f2faf3;
+  border-top:1px solid #1E5128 ;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -996,12 +1086,12 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1016,15 +1106,18 @@ section {
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #415f9d;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background-color: #f2f5fa;
+
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+  color: #1E5128;
 }
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
@@ -1044,7 +1137,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #47536e;
+  color: #1E5128;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1055,6 +1148,8 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
@@ -1063,13 +1158,11 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
 }
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
+
 #footer .footer-top .footer-links ul a {
   color: #8a8c95;
   transition: 0.3s;
@@ -1112,11 +1205,12 @@ section {
 }
 
 .footer-bottom {
-	/*background-color: #fff;*/
+  /*background-color: #fff;*/
 }
 
 @media (max-width: 768px) {
-  #footer .copyright, #footer .credits {
+  #footer .copyright,
+  #footer .credits {
     float: none;
     text-align: center;
     padding: 5px 0;
