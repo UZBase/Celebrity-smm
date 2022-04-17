@@ -170,6 +170,10 @@
       type: 'bullets',
       clickable: true
     },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -204,7 +208,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
